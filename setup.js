@@ -8,9 +8,9 @@ process.stdout.on('data', (data) => {
   });
   
 process.stderr.on('data', (data) => {
-console.log(`stderr: ${data}`);
+    console.log(`stderr: ${data}`);
 });
   
 process.on('close', (code) => {
-console.log(`child process exited with code ${code}`);
+    console.log(`child process exited with code ${code}`);
 });
