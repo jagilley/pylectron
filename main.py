@@ -1,11 +1,16 @@
 import sys
 import subprocess
 import datetime
+import traceback
 
-subprocess.call(["say", "python script called"])
-"""
-with open("/Users/jaspergilley/Desktop/aloha.txt", 'w') as f:
-    f.write(str(datetime.datetime.now()))
-"""
+try:
+    subprocess.call(["say", "python script called"])
+    """
+    with open("/Users/jaspergilley/Desktop/aloha.txt", 'w') as f:
+        f.write(str(datetime.datetime.now()))
+    """
+    safelih()
 
-sys.stdout.flush()
+    sys.stdout.flush()
+except:
+    print(traceback.format_exc())

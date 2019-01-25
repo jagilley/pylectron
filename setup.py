@@ -8,6 +8,7 @@ from time import sleep
 thisDir = os.getcwd()
 venvPath = thisDir + "/venv"
 mainPath = thisDir + "/main.py"
+fullVenvPath = thisDir + "/venv/bin/python3"
 print("thisDir is", thisDir)
 print("venvPath is", venvPath)
 
@@ -18,4 +19,4 @@ else:
     subprocess.call(["python3", "-m", "venv", "venv"])
 
 print("Running main.py")
-subprocess.call(["/Users/jaspergilley/Code/pylectron/venv/bin/python3", mainPath])
+subprocess.call([fullVenvPath, mainPath])
