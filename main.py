@@ -1,7 +1,11 @@
 import sys
+import subprocess
+import datetime
 
-print("hello world!")
-with open("/Users/jaspergilley/Desktop/test.txt", 'w') as f:
-    f.write("it works!!!")
+subprocess.call(["say", "python script called"])
+"""
+with open("/Users/jaspergilley/Desktop/aloha.txt", 'w') as f:
+    f.write(str(datetime.datetime.now()))
+"""
 
 sys.stdout.flush()

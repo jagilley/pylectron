@@ -20,20 +20,15 @@
     <br>
     <br>
     <button id="thisButton" type="button" onclick=myfunc2()>Click Me!</button>
-
-    <script>
-    function myfunc2(){
-      /*
-      var PythonShell = require('python-shell');
-      PythonShell.run('/Users/jaspergilley/Code/electron/electron-quick-start/main.py', function (err) {
-        if (err) throw err;
-        console.log('finished');
-      });*/
-      const { spawn } = require('child_process');
-      const process = spawn("python3", ["/Users/jaspergilley/Code/electron/electron-quick-start/main.py"])
-    }
     
+    <script>
+    
+    function myfunc2(){
+      const { spawn } = require('child_process');
+      const process = spawn("python3", ["/Users/jaspergilley/Code/pylectron/main.py"])
+    }
     </script>
+    <!---<script src="py.js"></script>--->
 
   </body>
 </html>
