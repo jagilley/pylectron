@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+
+    <a href="page2.html">aloha</a>
+    <br>
+    <br>
+    <button id="thisButton" type="button" onclick=myfunc2()>Click Me!</button>
+
+    <script>
+    function myfunc2(){
+      /*
+      var PythonShell = require('python-shell');
+      PythonShell.run('/Users/jaspergilley/Code/electron/electron-quick-start/main.py', function (err) {
+        if (err) throw err;
+        console.log('finished');
+      });*/
+      const { spawn } = require('child_process');
+      const process = spawn("python3", ["/Users/jaspergilley/Code/electron/electron-quick-start/main.py"])
+    }
+    
+    </script>
+
+  </body>
+</html>
