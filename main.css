@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+p, h2, h1, body {
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
