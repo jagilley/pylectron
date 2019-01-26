@@ -1,3 +1,9 @@
+# main.py
+"""
+Execute arbitrary code here. To preserve error printing in the output HTML
+element, be sure to keep the try-except wrapper.
+"""
+
 import sys
 import subprocess
 import datetime

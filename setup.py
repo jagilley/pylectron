@@ -1,7 +1,14 @@
+# setup.py
+"""
+Responsible for configuring the venv in which the Python scripts are to run,
+then calling main.py. Modify main.py, NOT this file.
+"""
+
 import os
 import subprocess
 import platform
 from time import sleep
+import traceback
 
 #subprocess.call(["say", "setup dot py called"])
 
