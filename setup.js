@@ -1,5 +1,5 @@
 const { spawn } = require('child_process');
-const process = spawn("python3", ["-u", "/Users/jaspergilley/Code/pylectron/setup.py"])
+const process = spawn("python3", ["-u", "setup.py"])
 /*
 process.stdout.on('data', (data) => {
     outputText = `stdout: ${data}`;
