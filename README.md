@@ -9,3 +9,5 @@ Pylectron is a simple Electron wrapper on a series of Python scripts. It feature
 
 ## Quickstart
 To start, simply clone this repo and modify `main.py` and `index.html`. The former excecutes automatically on program open, but is also triggered when the button in `index.html` is clicked. The latter is naturally responsible for the overall look/layout of the GUI.
+
+*Please note: you'll need the folder node_modules that provides the basis for Node.js in your directory for this project. I naturally haven't included it in this repo because it has over 4,000 files.*
